@@ -12,11 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("gavin.plugins", {
+  change_detection = {
+    nofity = false,
+  },
   checker = {
     enabled = true,
     notify = false,
   },
-  change_detection = {
-    nofity = false,
-  },
 })
+
+
