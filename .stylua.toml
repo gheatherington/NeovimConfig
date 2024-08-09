@@ -1,0 +1,4 @@
+# Config file for formatting example
+
+indent_type = "Spaces"
+indent_width = 

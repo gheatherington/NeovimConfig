@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("gavin.plugins", {
+require("lazy").setup({{import =  "gavin.plugins"}, {import = "gavin.plugins.lsp"}}, {
   change_detection = {
     nofity = false,
   },
